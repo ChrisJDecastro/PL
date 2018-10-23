@@ -24,7 +24,8 @@ public class TK {
     public static final TK ELSEIF  = new TK("TK.ELSEIF");  // |
     public static final TK ELSE    = new TK("TK.ELSE");    // %
     public static final TK ENDIF   = new TK("TK.ENDIF");   // ]
-    public static final TK DO      = new TK("TK.DO");      // <
+    public static final TK DO      = new TK("TK.DO");  // <
+    public static final TK FINISHDO = new TK("TK.FINISHDO"); // >
   
     public static final TK COMMA  = new TK("TK.COMMA");    // ,
     public static final TK LPAREN = new TK("TK.LPAREN");   // (
@@ -33,6 +34,10 @@ public class TK {
     public static final TK MINUS  = new TK("TK.MINUS");    // -
     public static final TK TIMES  = new TK("TK.TIMES");    // *
     public static final TK DIVIDE = new TK("TK.DIVIDE");   // /
+    public static final TK ASSIGNMENT = new TK('TK.ASSIGNMENT'); // =
+    public static final TK TILDE = new TK('TK.ASSIGNMENT'); // ~
+
+
 
     public static final TK ID     = new TK("TK.ID");	   // identifier
 
@@ -44,5 +49,6 @@ public class TK {
     public static final TK ERROR  = new TK("TK.ERROR");
     // TK.none marks end of each first set in parsing.
     // you might not need this.
+
     public static final TK none   = new TK("TK.none");
 }

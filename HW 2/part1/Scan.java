@@ -89,6 +89,12 @@ public class Scan {
 			return ccase1(']',TK.ENDIF);
 		    case '<':
 			return ccase1('<',TK.DO);
+			case '<':
+			return ccase1('>',TK.FINISHDO);
+			case '=':
+			return ccase1('=',TK.ASSIGNMENT);
+			case '~':
+			return ccase('~',TK.TILDE);
 		    case EOF:
 			got_eof = true;
 			return new Token(TK.EOF,
